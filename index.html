@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+  <title>پیشگامان فارس</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/index-D7-y4ueu.css">
+</head>
+
+<body>
+  <header class="headerMobile">
+    <button class="menu-toggle" id="menuToggle">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+    <a href="#">
+      <img src="/assets/Logo-DfvZORv9.jpg" alt="Logo" width="45" class="rounded-5">
+    </a>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <div class="CloseMenuWrapper"><button class="close-menu" id="closeMenu">
+          <div><i class="ri-close-fill"></i>
+          </div>
+        </button></div>
+
+      <ul class="MenuUl">
+        <li class="menu-item">
+          <a href="./index.html" class="text-white d-block w-100">صفحه اصلی
+          </a>
+        </li>
+        <li>
+          <button class="menu-item" onclick="toggleSubmenu(this)">
+            محصولات <span>+</span>
+          </button>
+          <ul class="submenu">
+            <li>
+              <button class="menu-item" onclick="toggleSubmenu(this)">
+                مسباره مات
+                <span>+</span>
+              </button>
+              <ul class="submenu">
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">دانه بندی و بسته بندی مسباره مات
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <button class="menu-item" onclick="toggleSubmenu(this)">
+                مسباره براق
+                <span>+</span>
+              </button>
+              <ul class="submenu">
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">دانه بندی و بسته بندی مسباره براق
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <li>
+              <button class="menu-item" onclick="toggleSubmenu(this)">
+                گارنت قرمز
+                <span>+</span>
+              </button>
+              <ul class="submenu">
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">دانه بندی و بسته بندی گارنت قرمز
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">سیلیس</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="menu-item" onclick="toggleSubmenu(this)">
+            مقالات و استاندارد ها
+            <span>+</span>
+          </button>
+          <ul class="submenu">
+            <li>
+              <a href="#" class="w-100 d-block">مزایای کلی مسیاره
+              </a>
+            </li>
+            <li>
+              <a href="#" class="w-100 d-block">مشخصات فنی مسباره</a>
+            </li>
+            <li>
+              <a href="#" class="w-100 d-block">مشخصات مسباره
+              </a>
+            </li>
+            <li>
+              <a href="#" class="w-100 d-block">آنالیز مسباره
+              </a>
+            </li>
+            <li>
+              <a href="#" class="w-100 d-block">ایمنی و محیط زیست
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="text-white d-block w-100">فروشگاه
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="text-white d-block w-100">گالری تصاویر
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="text-white d-block w-100">تماس با ما
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <header class="headerDesktop">
+    <nav class="navDesktop">
+      <div class="nav__data">
+        <a href="./index.html" class="nav__logo">
+          <img src="/assets/Logo-DfvZORv9.jpg" alt="Logo" width="50" class="Logo rounded-5">
+        </a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li>
+            <a href="#" class="nav__link">
+              صفحه اصلی
+              <i class="ri-home-4-line"></i>
+            </a>
+          </li>
+          <li class="dropdown__item">
+            <div class="nav__link">
+              محصولات <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li class="dropdown__subitem">
+                <div class="dropdown__link">
+                  <p>مسباره مات</p>
+                  <div><i class="ri-add-line dropdown__add"></i></div>
+                </div>
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      انواع دانه بندی و بسته بندی
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره مات
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره مات
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره مات
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__subitem">
+                <div class="dropdown__link">
+                  <p>مسباره براق</p>
+                  <div><i class="ri-add-line dropdown__add"></i></div>
+                </div>
+
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      انواع دانه بندی و بسته بندی
+                      <i class="ri-arrow-left-line"></i>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره براق
+                      <i class="ri-arrow-left-line"></i>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره براق
+                      <i class="ri-arrow-left-line"></i>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره براق
+                      <i class="ri-arrow-left-line"></i>
+
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__subitem">
+                <div class="dropdown__link">
+                  <p>گارنت قرمز </p>
+                  <div><i class="ri-add-line dropdown__add"></i></div>
+                </div>
+
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      انواع دانه بندی و بسته بندی
+                      <i class="ri-arrow-left-line"></i>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                      <i class="ri-arrow-left-line"></i>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                      <i class="ri-arrow-left-line"></i>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                      <i class="ri-arrow-left-line"></i>
+
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dropdown__link">
+                  سیلیس
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown__item">
+            <div class="nav__link">
+              مقالات و استاندارد ها <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#" class="dropdown__link">
+                  مزایای کلی مسباره
+                  <i class="ri-arrow-left-line"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  مشخصات فنی مسباره
+                  <i class="ri-arrow-left-line"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  مشخصات مسباره
+                  <i class="ri-arrow-left-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown__link">
+                  آنالیز مسباره
+                  <i class="ri-arrow-left-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown__link">
+                  ایمنی و محیط زیست
+                  <i class="ri-arrow-left-line"></i></a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="nav__link">
+              فروشگاه
+              <i class="ri-store-2-line"></i>
+            </a></li>
+          <li><a href="#" class="nav__link">
+              گالری تصاویر
+              <i class="ri-gallery-line"></i> </a></li>
+          <li><a href="#" class="nav__link">
+              تماس با ما
+              <i class="ri-phone-line"></i>
+            </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container my-4 d-flex justify-content-between align-items-center">
+      <div class="row row-equal-height">
+        <!-- بخش سمت چپ -->
+        <div class="col-12 col-md-3 p-0 text-center HeroText">
+          <img src="/assets/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87-%D8%B3%D9%86%DA%AF-%D8%B4%DA%A9%D9%86-CvzchkmC.jpg" class="img-fluid w-100" alt="Left Image">
+          <p class="mt-2 text-sm">دستگاه سنگ شکن تولید محصول مسباره مات</p>
+        </div>
+        <!-- بخش وسط -->
+        <div class="col-12 col-md-6 p-3 text-center d-flex flex-column justify-content-center align-items-center gap-2">
+          <h1>معرفی شرکت</h1>
+          <p class="IntroductionText">
+            شرکت پیشگام ساینده پارس توزیع کننده انواع <strong>مسباره</strong> از <strong>سرباره مس</strong> می باشد .
+            هدف این شرکت عرضه انواع محصولات <strong>مسباره</strong> و ساینده های صنعتی با کیفیتی
+            متناسب با درخواست خرید شما و تحویل آن در سریع ترین زمان ممکن می باشد
+          </p>
+        </div>
+        <!-- بخش سمت راست -->
+        <div class="col-12 col-md-3 p-0 text-center HeroText">
+          <img src="/assets/%D8%B3%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%DA%A9%D8%B4-lcWPdjtx.png" class="img-fluid w-100" alt="Right Image">
+          <p class="mt-2">دستگاه سرباره کش</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="IntroductionWrapper">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- متن -->
+        <div class=" col-10 col-lg-6">
+          <h2 class="mb-3">مسباره</h2>
+          <h4 class="mb-3">مسباره چیست ؟</h4>
+          <p class="IntroductionWrapper__Text">
+            یک ساینده مطرح و پر کاربرد برای سایش فلزات ، مسباره است . کاربرد اصلی مسباره ، حذف ناخالصی و آلودگی از روی
+            سطح فلز می
+            باشد .در عملیات سندبلاست یا بلاستینگ <a class="IntroductionWrapper__Text__link p-1"
+              href="https://optagroupllc.com/ebonygrit-copper-slag/">مسباره</a> مصرفی بوسیله جریان هوا با فشار بالا ،از
+            طریق نازل سندبلاست مناسب
+            ، روی سطوح
+            پاشیده می شوند . ساینده های مصرفی در نتیجه پاشش و برخورد به سطوح خرد و شکسته شده به دانه های کوچکتر تبدیل می
+            شوند. مزیت
+            و خصوصیت اصلی مسباره در همین شکسته شدن و تبدیل آن به اندازه های کوچکتر است زیرا اگر اندازه کوچکتر از 5
+            میکرون داشته
+            باشند ، همراه با تنفس وارد ریه خواهند شد که با عکس العمل طبیعی به حلق منتقل می شود و از طریق مخاط به وسیله
+            سرفه یا
+            بلعیدن از حلق خارج خواهند شد، متاسفانه ذرات کریستالی آزاد که همان سیلیس خالص می باشند،از این قاعده پیروی نمی
+            کنند ، ذرات
+            کریستالی با توجه به شکل ساختمانی خود به کیسه های هوایی داخل ریه می چسبند و سیستم طبیعی زدایش مختل شده و در
+            نتیجه وجود
+            غبار سیلیس آزاد ، در داخل ریه زخم بوجود می آید .که باعث بیماری و سرطان ریه و بیماری سیلیکوسیس می شوند . به
+            لطف چگالی
+            بالای مسباره و مزیت و خصوصیت خرد و شکسته شدن آن به دانه های ریزتر ، با کمی سعی و تلاش در فیلتر و ایزوله
+            نمودن فضای کار ،
+            می توانیم سرطان ریه در محوطه های کارگاهی و کارخانجات ارائه خدمات به صنایع نفت و گاز و پتروشیمی در سراسر میهن
+            عزیزمان را
+            ریشه کن کنیم
+          </p>
+        </div>
+        <div class="justify-content-center d-flex flex-wrap gap-3">
+          <img class="p-3" src="/assets/%D9%85%D8%B3%D8%A8%D8%A7%D8%B1%D9%87-%D8%A8%D8%B1%D8%A7%D9%82-DgWBiTS8.png" alt="مسباره مات" width="300" height="300">
+          <img class="p-3" src="/assets/%D9%85%D8%B3%D8%A8%D8%A7%D8%B1%D9%87-%D9%85%D8%A7%D8%AA-CnQ6MU3N.png" alt="مسباره براق" width="300" height="300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <img class="SepratorImage" src="/assets/%DA%A9%D8%A7%D8%B1%DA%AF%D8%A7%D9%87-%D8%A8%D8%B3%D8%AA%D9%87-%D8%A8%D9%86%D8%AF%DB%8C-CkD7uc1v.png" alt="کارگاه بسته بندی">
+
+
+  <section class="Products container">
+    <h4 class="text-center">انواع <strong>مسباره</strong> جهات <strong>سندبلاست</strong> سطوع فلزی عبارتند از:</h4>
+    <div class="Products__items">
+      <img src="/assets/maatBackGround-IsIr31MW.jpg" alt="maatBackGround" class="Products__items__Image img-fluid w-100">
+      <div class="Products__items__Text d-flex justify-content-center align-self-center flex-column">
+        <h3>مسباره مات</h3>
+        <p class="Products__items__Text__Details">
+          <strong>مسباره مات</strong> حاصل فرآیند ذوب و تغلیظ کوره های ریورپ مس سرچشمه می باشد
+          که پس از جداسازی <strong>سرباره مس</strong> از مذاب مس ، <strong>مسباره مات</strong> حمل گردیده
+          و داخل سنگ شکن به انواع دانه بندی و سپس در جمبوبگ بسته بندی می گردند
+        </p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-around m-4  gap-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/maat(2-3)-CmQ_X2rj.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">خرید مسباره مات سایز 2 تا 3</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/maat(0.5-1.68)-Ddlk6sxZ.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">خرید مسباره مات سایز 0.5 تا 1.68</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/maat(1-2.5)-IGlMOppb.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">خرید مسباره مات سایز 1 تا 1.25</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+      </div>
+      <a href="./maat.html" class="btnCustomProduct">مسباره مات</a>
+    </div>
+    <div class="Products__items">
+      <img src="/assets/baraghBackGround-DhodlvRZ.jpg" alt="maatBackGround"
+        class="Products__items__Image img-fluid w-100">
+      <div class="Products__items__Text d-flex justify-content-center align-self-center flex-column">
+        <h3>مسباره براق</h3>
+        <p class="Products__items__Text__Details">
+          <strong>مسباره براق</strong> حاصل فرآیند کوره های آندی و کاتدی ذوب خاتون آباد هستند
+          که پس از تهیه و خشک کردن ، داخل سرند به دانه بندی های مختلف تهیه و
+          بسته بندی می گردند
+        </p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-around m-4 gap-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/baragh(0.5-1.68)-DFmUW_kW.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">خرید مسباره براق سایز 0.5 تا 1.68</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/maat(1-2.5)-IGlMOppb.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">خرید مسباره براق سایز 1 تا 1.25</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/baragh(2-3)-BMuPrrxf.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">خرید مسباره براق سایز 2 تا 3</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+      </div>
+      <a href="./baragh.html" class="btnCustomProduct">مسباره براق</a>
+    </div>
+    <div class="Products__items">
+      <img src="/assets/garnetBackGround-BM7CWIwV.jpg" alt="maatBackGround"
+        class="Products__items__Image img-fluid w-100">
+      <div class="Products__items__Text d-flex justify-content-center align-self-center flex-column">
+        <h3>گارنت قرمز</h3>
+        <p class="Products__items__Text__Details">
+          <a href="https://gmagarnet.com/en/sandblasting-media">گارنت قرمز</a> یک ماده معدنی طبیعی قوی است که بدلیل سختی
+          ، فشردگی ،چگالی و زاویه ای بودن ذاتی آن
+          ویژگی های منحصر به فردی به خود می گیرد.گارنت قرمز بصورت طبیعی ریز دانه است و بسیار مناسب برای
+          پروژ هایی که میزان زبری در واحد سطح از اهمیت ویژه برخوردار است همچون لوله های استنلس استیل
+        </p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-around m-4 gap-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/maat(2-3)-CmQ_X2rj.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">اطلاعات کارت 1</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/maat(0.5-1.68)-Ddlk6sxZ.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">اطلاعات کارت 2</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/assets/maat(1-2.5)-IGlMOppb.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="text-center">اطلاعات کارت 3</p>
+            <a href="#" class="btnCustomCard">خرید</a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btnCustomProduct">گارنت قرمز</a>
+    </div>
+  </section>
+
+
+  <section class="CategoryWrapper">
+    <div class="CategoryWrapper__text__bold my-3">انواع دسته بندی و دانه بندی محصولات که شما با توجه به نیاز پروژه تا
+      میتوانین انتخاب نمایید</div>
+    <hr class="Category__hr">
+    <p class="CategoryWrapper__text__light my-4">انتخاب و خرید مسباره در یک نگاه</p>
+    <div class="row container my-5 m-auto d-flex justify-content-center gap-5">
+      <div class="card text-center col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder">
+        <div class="card-body Category__FlexDisplay">
+          <h5 class="card-title">مسباره مات</h5>
+          <p class="card-text">مسباره مات سایز 0.5-1.68 جهت تمیز کاری سطوح فلزی معمولی مانند مخازن و لوله های انتقال گاز
+            مفید است پروفایل حداکثر 80
+            میکرون ایجاد میکتند در بسته بندی جمبوبگ 2.5 تنی است</p>
+          <a href="#" class="CategoryCustomBTN">مشاهده</a>
+        </div>
+      </div>
+      <div class="card text-center col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder">
+
+        <div class="card-body Category__FlexDisplay">
+          <h5 class="card-title">مسباره مات</h5>
+          <p class="card-text">مسباره مات سایز 0.5-3 و سایز 2-3 جهت تمیز کاری سطوح فلزی ضخیم برداشت لایه های ضخیم و رسوب
+            گرفتگی تعمیرات کشتی با پروفایل
+            های بین 150 میکرون تا 200 میکرون مربوط به سایز 0.5-3 و پروفایل بیشتر از 200 میکرون برای سایز 2-3 مناسب است و
+            در بسته
+            بندی جمبوبگ 2.5 تنی است</p>
+          <a href="#" class="CategoryCustomBTN">مشاهده</a>
+        </div>
+      </div>
+      <div class="card text-center col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder">
+        <div class="card-body Category__FlexDisplay">
+          <h5 class="card-title">مسباره مات</h5>
+          <p class="card-text">مسباره مات کیسه 40 کیلویی در جمبوبگ می باشد که هر نوع دانه بندی در سایز های 0.5-1.68 و
+            0.5-3 و 2-3 را در ابتدا در کیسه
+            های 40 کیلیویی بسته بندی می گردند و سپس داخل جمبوبگ 2/5 تنی گذاشته می شوند</p>
+          <a href="#" class="CategoryCustomBTN">مشاهده</a>
+        </div>
+      </div>
+      <div class="card text-center col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder">
+        <div class="card-body Category__FlexDisplay">
+          <h5 class="card-title">مسباره براق</h5>
+          <p class="card-text">مسباره براق سایز 0.4-0.8 و سایز 0.5-1 میلیمتر ، جهت سطوح با درجه لایه اکسیدی بسیار پایین
+            ، خطوط لوه و سر جوشها</p>
+          <a href="#" class="CategoryCustomBTN">مشاهده</a>
+        </div>
+      </div>
+      <div class="card text-center col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder">
+        <div class="card-body Category__FlexDisplay">
+          <h5 class="card-title">مسباره براق</h5>
+          <p class="card-text">مسباره براق سایز 0.5-2 و 1-2 میلیمتر جهت تمیز کاری سطوح معمولی و درجه لایه اکسیدی پایین و
+            بسیار مناسب برای تعویض خطوط
+            لوله می باشند پروفایل بین 80 تا 100 میکرون ایجاد می ک</p>
+          <a href="#" class="CategoryCustomBTN">مشاهده</a>
+        </div>
+      </div>
+      <div class="card text-center col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder">
+        <div class="card-body Category__FlexDisplay">
+          <h5 class="card-title">مسباره براق</h5>
+          <p class="card-text">مسباره براق سایز 0.5-3 میلیمتر جهت سطوح با لایه های اکسیدی بالا و ایجاد پروفایل بین
+            100-130 میکرون و سایز 2-3 میلیمتر
+            جهت سطوح با لایه های اکسیدی بالا و تعویض سطوحی که دارای پوشش ضخیم و چسبنده می باشند</p>
+          <a href="#" class="CategoryCustomBTN">مشاهده</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <h2 class="mb-3">با ما در تماس باشید</h2>
+      <div class="col-sm-11 m-auto">
+        <div class="card FooterCard">
+          <div class="card-body">
+            <h3>اطلاعات تماس</h3>
+            <p>
+              <strong>آدرس:</strong> ایران , تهران , فلکه دوم صادقیه , بلوار فردوس شرق , خیابان مالکی جنوبی , کوچه
+              نیلوفر غربی , پلاک
+              10
+              , طبقه سوم , واحد 6
+            </p>
+            <p><strong>کد پستی:</strong> 1481736356</p>
+            <hr class="hr">
+            <div class="d-flex flex-row-reverse flex-wrap justify-content-center gap-3">
+              <a href="tel:+982144955587" class="d-flex justify-content-center gap-2 text-black-50 PhoneHover">
+                <p>+98 2144 9555 87</p> <strong>:شماره تماس <i class="ri-phone-line"></i> </strong>
+              </a>
+              <a href="tel:+989122023991" class="d-flex justify-content-center gap-2 text-black-50 PhoneHover">
+                <p>+98 912 2023 991</p> <strong>:شماره همراه <i class="ri-smartphone-line"></i></strong>
+              </a>
+              <a href="https://wa.me/+989122023991"
+                class="d-flex justify-content-center gap-2 text-black-50 PhoneHover">
+                <p>+98 912 2023 991</p> <strong>: واتس اپ <i class="ri-whatsapp-line"></i></strong>
+              </a>
+              <a href="mailto:mohsenajouri@gmail.com"
+                class="d-flex justify-content-center gap-2 text-black-50 PhoneHover">
+                <p>mohsenajouri@gmail.com</p> <strong>: ایمیل <i class="ri-mail-line"></i></strong>
+              </a>
+            </div>
+            <hr class="hr">
+            <h4>مارو در فضای مجازی دنبال کنید</h4>
+            <div class="social__icons">
+              <a href="#" class="social__icon">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="#" class="social__icon">
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a href="#" class="social__icon">
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a href="#" class="social__icon">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a href="#" class="social__icon">
+                <i class="ri-telegram-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <Script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></Script>
+  <script>function toggleHeader() {
+      const headerMobile = document.querySelector(".headerMobile");
+      const headerDesktop = document.querySelector(".headerDesktop");
+
+      if (window.innerWidth <= 1000) {
+        headerMobile.style.display = "flex";
+        headerDesktop.style.display = "none";
+      } else {
+        headerMobile.style.display = "none";
+        headerDesktop.style.display = "block";
+      }
+    }
+
+    window.addEventListener("resize", toggleHeader);
+
+    window.addEventListener("DOMContentLoaded", toggleHeader);
+
+    const menuToggle = document.getElementById("menuToggle");
+    const closeMenu = document.getElementById("closeMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.add("open");
+      closeMenu.style.display = "block";
+    });
+
+    closeMenu.addEventListener("click", () => {
+      closeMenuHandler();
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !mobileMenu.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
+        closeMenuHandler();
+      }
+    });
+
+    function closeMenuHandler() {
+      mobileMenu.classList.remove("open");
+      closeMenu.style.display = "none";
+      menuToggle.style.display = "block";
+    }
+
+    function toggleSubmenu(button) {
+      const submenu = button.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle("open");
+      }
+    }
+  </script>
+</body>
+
+</html>
